@@ -182,8 +182,7 @@ class MainPage(FloatLayout):
         popup = UserInfoPopup(self)  # Pass the main page to the popup
         popup.open()
 
-    
-  
+
 
 
 class RollMate(App):
