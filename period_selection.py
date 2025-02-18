@@ -75,31 +75,32 @@ class PeriodSelection(FloatLayout):  # Use FloatLayout here
             self.rect = RoundedRectangle(pos=self.pos, size=self.size, radius=[20,])
         self.bind(pos=self.update_rect, size=self.update_rect)
 
+        ###############################################
+        url = str(BASE_URL+'/get-classnames-by-student')
 
-        """ def get_classroom_status():
-            url=str(BASE_URL + "/get-classroom-status")
-
-            payload = {
-
-                'classroom': self.selected_option,
-                'date': date.today().strftime("%Y-%m-%d")
-
-            }
-            
-            response = requests.post(url, json=payload)
-
-            print(response.text) """
-
+        with open(USER_DATA_FILE, 'r') as f:
+            user_data = json.load(f)
         
 
-            
+        studentuserId = user_data["user_id"]
 
+        payload = {
+
+            'studentId': studentuserId
+        }
+
+        response = requests.get(url, json=payload)
+
+        data = response.json()
+        print(data)
+        classrooms = data["classnames"]
+        ################################################
         # Position error_label higher
         error_label.pos_hint = {'center_x': 0.5, 'top': 0.85}  # Adjusted position
         
         # Period selection dropdown
         self.dropdown = DropDown(auto_width=False, width=200)
-        for period in ['Arrival Sign-in','7BlueMath', '7BlueELA', '7BlueScience', '7BlueGeography']:
+        for period in classrooms:
             btn = RoundedButton(text=period, size_hint_y=None, height=50, pos_hint={'center_x': 0.5})
             btn.bind(on_release=lambda btn, period=period: self.update_button(self.main_button, period))
             self.dropdown.add_widget(btn)
@@ -132,13 +133,7 @@ class PeriodSelection(FloatLayout):  # Use FloatLayout here
             
             
             self.login_button.bind(on_press=self.on_login_button_press)
-            
-
-            """ status = self.get_classroom_status(self.selected_option)
-
-            if status == "" """
-
-            
+                   
             
 
             '''if current_time >= startTime and current_time <= endTime:
