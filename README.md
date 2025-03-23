@@ -10,6 +10,6 @@ RollMate is here to simplify and automate this problem, by sending API requests 
 
 ![Screenshot 2025-03-23 123140](https://github.com/user-attachments/assets/d3fc28d2-09d3-47c2-ac07-f50e43dd6533)
 
-*(Some basic data being stored in a .json file)*
+***(Some basic data being stored in a .json file)***
 
 
