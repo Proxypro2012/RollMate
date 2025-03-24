@@ -18,7 +18,7 @@ RollMate is here to simplify and automate this problem, by sending API requests 
  
  
  
-My app uses Kivy, a comprehensive python library built for developing cross platform apps in pure python.
+My app uses **Kivy**, a comprehensive python library built for developing cross platform apps in pure python.
 To get started, simply run:
 
 (On Windows) - 
