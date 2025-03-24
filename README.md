@@ -1,7 +1,7 @@
 # RollMate
 A mobile application created for schools and institutions to Automate their attendance systems.
 
-
+---
 
 My middle school's attendance system is really outdated and inefficient. Teachers and assistants will go through the **Schoology Attendance Portal**, marking us either 'present' or 'absent' depending on our status. 
 RollMate is here to simplify and automate this problem, by sending API requests to schoology's attendance endpoint with the details of the user of the app. Teachers won't have to go through each student manually and check them off as my app will cover this.
