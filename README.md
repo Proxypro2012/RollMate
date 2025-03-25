@@ -36,7 +36,7 @@ Read the documentation ***here***: https://kivy.org/doc/stable/
 
 
 
-I have a flask powered API server running in the background, hosted on **Anaconda's PythonAnywhere**, a great free site for hosting python servers.
+I have a flask powered API server running in the background, hosted on **Anaconda's PythonAnywhere**, a great free site for hosting python servers. All data recieved by the server side client and the app is stored in **.JSON** format.
 My server is temporary, but it is powered by many different requests. For example:
 
 
