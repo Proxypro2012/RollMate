@@ -28,6 +28,9 @@ To get started, simply run:
 `pip3 install kivy`
 
 
+Read the documentation ***here***: https://kivy.org/doc/stable/
+
+
 
 
 
