@@ -93,3 +93,4 @@ My server is temporary, but it is powered by many different requests. For exampl
       
           return jsonify(selected_rows)
 '''
+Rollmate is designed to fit my school's needs (***Oak Middle School, Shrewsbury MA***) and to automate our current attendance system. It is flexible, and I plan to roll it out soon after consulting my schools Head of Tech IT official.
